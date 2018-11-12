@@ -6,4 +6,4 @@ Def ps0_b():
     x = float(input("Define x: ")
     y = float(input("Define y: ")
     print("x**y = ",x**y)
-    print("log(x) = ",math.log(x))
+    print("log2(x) = ",math.log2(x))

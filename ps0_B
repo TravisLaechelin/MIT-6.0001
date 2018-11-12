@@ -1,6 +1,9 @@
 import math
 
-x = float(input("Define x: ")
-y = float(input("Define y: ")
-print("x**y = ",x**y)
-print("log(x) = ",math.log(x))
+
+Def ps0_b():
+
+    x = float(input("Define x: ")
+    y = float(input("Define y: ")
+    print("x**y = ",x**y)
+    print("log(x) = ",math.log(x))

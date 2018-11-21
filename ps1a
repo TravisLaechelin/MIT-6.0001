@@ -1,12 +1,19 @@
-import math
+print('Home Loan Downpayment Calculator')  # opening statement.
 
+annual_salary = int(input('Enter your Annual Salary: '))
+portion_saved = float(input('Enter the portion of salary you will save: '))
+home_price = int(input('Enter the cost of your home: '))
 
-Print ("Home Loan Downpayment Calculator")
-annual_salary = float(input("Enter your Annual Salary. "))
-Portion_saved = float(input("Enter the decimal portion of your salary you will save. "))
-total_cost = float(input("Enter the cost of your home. "))
-portion_down_payment = float(0.25)
-current_savings = float(0)
-r = float(0.04)
-monthly_salary = float()
-number_of_months = Int()
+current_savings = 0.0
+savings_interest = (current_savings*0.04)/12
+monthly_savings = (annual_salary/12)*portion_saved
+down_payment = home_price * 0.25
+months_to_goal = 0
+
+while current_savings < down_payment:
+    months_to_goal += 1
+    current_savings = current_savings + savings_interest + monthly_savings
+
+print(' ')
+print(' ')
+print('Number of months: ', months_to_goal)
